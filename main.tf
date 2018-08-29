@@ -2,7 +2,7 @@
 resource "aws_instance" "example" {
   ami           = "ami-69f7b805"
   instance_type = "t2.micro"
-  security_groups = [ "${aws_security_group.sg.id}" ]
+  # security_groups = [ "${aws_security_group.sg.id}" ]
   tags {
     Name = "${var.name}"
     Environment = "${var.environment}"
